@@ -1,0 +1,85 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{slip_boy_name}-- {slip_boy}",
+ "creation": "2023-06-05 10:01:47.764286",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "slip_boy",
+  "column_break_by148",
+  "slip_boy_name",
+  "column_break_czxfc",
+  "circle_office",
+  "section_break_zfszj",
+  "village_table_sb"
+ ],
+ "fields": [
+  {
+   "fieldname": "slip_boy",
+   "fieldtype": "Link",
+   "label": "Slip Boy",
+   "options": "User"
+  },
+  {
+   "fieldname": "column_break_by148",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "slip_boy.full_name",
+   "fieldname": "slip_boy_name",
+   "fieldtype": "Data",
+   "label": "Slip Boy Name"
+  },
+  {
+   "fieldname": "section_break_zfszj",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "village_table_sb",
+   "fieldtype": "Table",
+   "label": "Village Table(SB)",
+   "options": "Child Slip Boy Access"
+  },
+  {
+   "fieldname": "column_break_czxfc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "circle_office",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Circle Office",
+   "options": "Circle Office"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-02-02 10:38:39.764467",
+ "modified_by": "Administrator",
+ "module": "Sugar Mill",
+ "name": "Slip Boy Assignment",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "circle_office,slip_boy_name",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "slip_boy_name"
+}

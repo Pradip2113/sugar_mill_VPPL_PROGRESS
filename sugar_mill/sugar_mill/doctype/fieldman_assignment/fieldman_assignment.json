@@ -1,0 +1,70 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{fieldman_name}-{fieldman}",
+ "creation": "2023-08-08 19:57:13.972453",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "fieldman",
+  "column_break_ulict",
+  "fieldman_name",
+  "section_break_dvpaa",
+  "circle_office_table_fm"
+ ],
+ "fields": [
+  {
+   "fieldname": "fieldman",
+   "fieldtype": "Link",
+   "label": "Fieldman",
+   "options": "User"
+  },
+  {
+   "fieldname": "column_break_ulict",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "fieldman.full_name",
+   "fieldname": "fieldman_name",
+   "fieldtype": "Data",
+   "label": "Fieldman Name"
+  },
+  {
+   "fieldname": "section_break_dvpaa",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "circle_office_table_fm",
+   "fieldtype": "Table",
+   "label": "Circle Office Table (FM)",
+   "options": "Child Slip Boy Assignment Circle Office"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-08-08 20:34:02.430433",
+ "modified_by": "Administrator",
+ "module": "Sugar Mill",
+ "name": "Fieldman Assignment",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

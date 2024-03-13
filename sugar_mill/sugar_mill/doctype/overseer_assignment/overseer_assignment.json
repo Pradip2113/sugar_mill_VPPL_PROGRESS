@@ -1,0 +1,100 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{overseer_name}-{overseer}",
+ "creation": "2023-08-07 17:17:01.159980",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "overseer",
+  "column_break_ulict",
+  "overseer_name",
+  "section_break_dvpaa",
+  "circle_office_table_os",
+  "section_break_lpycy",
+  "fieldman_table",
+  "slip_boy_table",
+  "button"
+ ],
+ "fields": [
+  {
+   "fieldname": "overseer",
+   "fieldtype": "Link",
+   "label": "Overseer",
+   "options": "User"
+  },
+  {
+   "fieldname": "circle_office_table_os",
+   "fieldtype": "Table",
+   "label": "Circle Office Table (OS)",
+   "options": "Child Slip Boy Assignment Circle Office"
+  },
+  {
+   "fetch_from": "overseer.full_name",
+   "fieldname": "overseer_name",
+   "fieldtype": "Data",
+   "label": "Overseer Name"
+  },
+  {
+   "fieldname": "column_break_ulict",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_dvpaa",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_lpycy",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "fieldman_table",
+   "fieldtype": "Table",
+   "hidden": 1,
+   "label": "Fieldman Table",
+   "options": "Fieldsman Under Overseer"
+  },
+  {
+   "fieldname": "slip_boy_table",
+   "fieldtype": "Table",
+   "hidden": 1,
+   "label": "Slip Boy table",
+   "options": "Slip boy Under Fieldman"
+  },
+  {
+   "fieldname": "button",
+   "fieldtype": "Button",
+   "hidden": 1,
+   "label": "button"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-02-02 10:28:46.178186",
+ "modified_by": "Administrator",
+ "module": "Sugar Mill",
+ "name": "Overseer Assignment",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "overseer",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "overseer_name"
+}

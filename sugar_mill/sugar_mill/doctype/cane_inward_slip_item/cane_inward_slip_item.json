@@ -1,0 +1,220 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2023-08-03 19:03:11.227819",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "season",
+  "column_break_mrhcb",
+  "branch",
+  "column_break_rxbd6",
+  "date",
+  "column_break_hu1h6",
+  "slip_no",
+  "section_break_uoiyk",
+  "plot_no",
+  "column_break_nl44b",
+  "farmer_code",
+  "column_break_gvftv",
+  "farmer_name",
+  "column_break_yygaj",
+  "field_village",
+  "column_break_l0irc",
+  "area_acre",
+  "column_break_a5r4c",
+  "cane_variety",
+  "section_break_swkkd",
+  "plantation_date",
+  "column_break_jyuxn",
+  "survery_no",
+  "column_break_5daky",
+  "route_name",
+  "column_break_mx4bn",
+  "distance",
+  "column_break_d3btb",
+  "burn_cane",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "season",
+   "fieldtype": "Link",
+   "label": "Season",
+   "options": "Season"
+  },
+  {
+   "fieldname": "column_break_mrhcb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "branch",
+   "fieldtype": "Link",
+   "label": "Plant",
+   "options": "Branch"
+  },
+  {
+   "fieldname": "column_break_rxbd6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "column_break_hu1h6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "plot_no.slip_no",
+   "fieldname": "slip_no",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Slip No",
+   "precision": "0"
+  },
+  {
+   "fieldname": "section_break_uoiyk",
+   "fieldtype": "Section Break"
+  },
+  {
+   "columns": 1,
+   "fieldname": "plot_no",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Trip Sheet No",
+   "options": "Trip Sheet"
+  },
+  {
+   "fieldname": "column_break_nl44b",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "farmer_code",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Farmer Code",
+   "options": "Farmer List"
+  },
+  {
+   "fieldname": "column_break_gvftv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "farmer_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Farmer Name"
+  },
+  {
+   "fieldname": "column_break_yygaj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "field_village",
+   "fieldtype": "Link",
+   "label": "Field Village",
+   "options": "Village"
+  },
+  {
+   "fieldname": "column_break_l0irc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 1,
+   "fieldname": "area_acre",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Area Acre ",
+   "precision": "1"
+  },
+  {
+   "fieldname": "column_break_a5r4c",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 1,
+   "fieldname": "cane_variety",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Cane Variety",
+   "options": "Cane Variety"
+  },
+  {
+   "fieldname": "section_break_swkkd",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "plantation_date",
+   "fieldtype": "Date",
+   "label": "Plantation Date"
+  },
+  {
+   "fieldname": "column_break_jyuxn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "plot_no.survery_no",
+   "fieldname": "survery_no",
+   "fieldtype": "Data",
+   "label": "Survery No"
+  },
+  {
+   "fieldname": "column_break_5daky",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "route_name",
+   "fieldtype": "Link",
+   "label": "Route Name",
+   "options": "Route"
+  },
+  {
+   "fieldname": "column_break_mx4bn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "distance",
+   "fieldtype": "Float",
+   "label": "Distance",
+   "precision": "1"
+  },
+  {
+   "fieldname": "column_break_d3btb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "burn_cane",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Cane Deduction Type",
+   "options": "\nMatured Cane\nBurn Cane\nUnmatured Cane"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Cane Inward Slip Item",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-09-25 13:17:40.323683",
+ "modified_by": "Administrator",
+ "module": "Sugar Mill",
+ "name": "Cane Inward Slip Item",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

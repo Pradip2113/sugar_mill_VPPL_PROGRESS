@@ -1,0 +1,56 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2023-08-16 14:08:22.165470",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "reset",
+  "section_break_ecfqf",
+  "weight_bridge_table"
+ ],
+ "fields": [
+  {
+   "fieldname": "reset",
+   "fieldtype": "Button",
+   "label": "Reset"
+  },
+  {
+   "fieldname": "section_break_ecfqf",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "weight_bridge_table",
+   "fieldtype": "Table",
+   "label": "Weight Bridge Table",
+   "options": "Weight Bridge Table"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-09-06 13:02:30.673582",
+ "modified_by": "Administrator",
+ "module": "Sugar Mill",
+ "name": "Weight Calculation",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

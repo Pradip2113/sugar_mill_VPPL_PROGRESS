@@ -1,0 +1,129 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:village",
+ "creation": "2023-03-22 18:05:34.175421",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "section_break_1",
+  "village",
+  "circle_office",
+  "column_break_8xths",
+  "route",
+  "distance_km",
+  "column_break_3",
+  "taluka",
+  "district",
+  "column_break_6",
+  "state",
+  "pin_code"
+ ],
+ "fields": [
+  {
+   "fieldname": "village",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Village",
+   "unique": 1
+  },
+  {
+   "fieldname": "pin_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Pin Code"
+  },
+  {
+   "fieldname": "circle_office",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Circle Office",
+   "options": "Circle Office"
+  },
+  {
+   "fieldname": "taluka",
+   "fieldtype": "Link",
+   "label": "Taluka",
+   "options": "Taluka"
+  },
+  {
+   "fetch_from": "taluka.district",
+   "fieldname": "district",
+   "fieldtype": "Link",
+   "label": "District",
+   "options": "District"
+  },
+  {
+   "fetch_from": "taluka.state",
+   "fieldname": "state",
+   "fieldtype": "Link",
+   "label": "State",
+   "options": "State"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_1",
+   "fieldtype": "Section Break",
+   "label": "Village Details"
+  },
+  {
+   "fieldname": "column_break_8xths",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Route",
+   "options": "Route"
+  },
+  {
+   "fetch_from": "route.distance_km",
+   "fieldname": "distance_km",
+   "fieldtype": "Float",
+   "label": "Distance KM",
+   "precision": "1"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "naming series",
+   "options": ".#"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-08-24 12:07:23.328065",
+ "modified_by": "Administrator",
+ "module": "Sugar Mill",
+ "name": "Village",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

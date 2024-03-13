@@ -1,0 +1,63 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-08-03 13:30:49.043560",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "h_and_t_contract_code",
+  "name1",
+  "column_break_o0v9l",
+  "gang",
+  "vehicle_type"
+ ],
+ "fields": [
+  {
+   "fieldname": "h_and_t_contract_code",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "H and T Contract Code",
+   "options": "H and T Contract"
+  },
+  {
+   "fetch_from": "h_and_t_contract_code.transporter_name",
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Name"
+  },
+  {
+   "fieldname": "column_break_o0v9l",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "h_and_t_contract_code.gang_type",
+   "fieldname": "gang",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Gang",
+   "options": "Gang Type"
+  },
+  {
+   "fetch_from": "h_and_t_contract_code.vehicle_type",
+   "fieldname": "vehicle_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Vehicle Type",
+   "options": "Vehicle Type"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-08-28 15:08:52.406633",
+ "modified_by": "Administrator",
+ "module": "Sugar Mill",
+ "name": "Child Bas Pali",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

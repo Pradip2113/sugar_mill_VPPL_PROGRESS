@@ -1,0 +1,105 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-08-03 12:23:58.549597",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "season",
+  "column_break_yizxg",
+  "branch",
+  "column_break_oiie1",
+  "column_break_ppclw",
+  "column_break_5yray",
+  "from_date",
+  "column_break_rqmmv",
+  "to_date",
+  "column_break_pufob",
+  "section_break_vbdmi",
+  "transporter_table"
+ ],
+ "fields": [
+  {
+   "fieldname": "season",
+   "fieldtype": "Link",
+   "label": "Season",
+   "options": "Season"
+  },
+  {
+   "fieldname": "column_break_yizxg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "branch",
+   "fieldtype": "Link",
+   "label": "Branch",
+   "options": "Branch"
+  },
+  {
+   "fieldname": "column_break_oiie1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_ppclw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_5yray",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "from_date",
+   "fieldtype": "Datetime",
+   "label": " From Date"
+  },
+  {
+   "fieldname": "column_break_rqmmv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "to_date",
+   "fieldtype": "Datetime",
+   "label": "To Date"
+  },
+  {
+   "fieldname": "column_break_pufob",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_vbdmi",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "transporter_table",
+   "fieldtype": "Table",
+   "label": "Transporter Table",
+   "options": "Child Bas Pali"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-08-28 15:06:20.086310",
+ "modified_by": "Administrator",
+ "module": "Sugar Mill",
+ "name": "Bas Pali",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

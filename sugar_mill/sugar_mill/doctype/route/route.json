@@ -1,0 +1,157 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:route_code",
+ "creation": "2023-05-10 10:56:51.707184",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "route_code",
+  "column_break_51vsi",
+  "route",
+  "column_break_zt4an",
+  "distance_km",
+  "column_break_w4wat",
+  "column_break_i81ya",
+  "section_break_auueq",
+  "village",
+  "column_break_e6eyx",
+  "circle_office",
+  "column_break_ttecm",
+  "taluka",
+  "column_break_t7ohm",
+  "district",
+  "column_break_godbc",
+  "state",
+  "column_break_19ubp",
+  "pin_code"
+ ],
+ "fields": [
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Route",
+   "unique": 1
+  },
+  {
+   "fieldname": "distance_km",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Distance KM",
+   "precision": "0"
+  },
+  {
+   "fieldname": "village",
+   "fieldtype": "Link",
+   "label": "Village",
+   "options": "Village"
+  },
+  {
+   "fieldname": "route_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Route Code",
+   "unique": 1
+  },
+  {
+   "fieldname": "column_break_51vsi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_zt4an",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_w4wat",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_i81ya",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_auueq",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_e6eyx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "circle_office",
+   "fieldtype": "Link",
+   "label": "Circle Office",
+   "options": "Circle Office"
+  },
+  {
+   "fieldname": "column_break_ttecm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "taluka",
+   "fieldtype": "Link",
+   "label": "Taluka",
+   "options": "Taluka"
+  },
+  {
+   "fieldname": "column_break_t7ohm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "district",
+   "fieldtype": "Link",
+   "label": "District",
+   "options": "District"
+  },
+  {
+   "fieldname": "column_break_godbc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "state",
+   "fieldtype": "Link",
+   "label": "State",
+   "options": "State"
+  },
+  {
+   "fieldname": "column_break_19ubp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "pin_code",
+   "fieldtype": "Data",
+   "label": "Pin Code"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-08-23 18:51:40.148484",
+ "modified_by": "Administrator",
+ "module": "Sugar Mill",
+ "name": "Route",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "route",
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "route"
+}

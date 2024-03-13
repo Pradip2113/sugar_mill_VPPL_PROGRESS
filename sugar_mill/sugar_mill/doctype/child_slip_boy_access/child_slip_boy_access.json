@@ -1,0 +1,40 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-08-04 15:56:31.028921",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "village",
+  "village_name"
+ ],
+ "fields": [
+  {
+   "fieldname": "village",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Village Route",
+   "options": "Route"
+  },
+  {
+   "fetch_from": "village.village",
+   "fieldname": "village_name",
+   "fieldtype": "Data",
+   "label": "Village"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-01-31 10:34:30.199799",
+ "modified_by": "Administrator",
+ "module": "Sugar Mill",
+ "name": "Child Slip Boy Access",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
